@@ -1,14 +1,6 @@
 import { ChatTeardropDots } from 'phosphor-react';
 import { Popover } from '@headlessui/react';
 
-/*Aprendemos conceitos básicos do React como Componentes (Funções que retornarm HTML e CSS)
-como o React renderiza a DOM, e por fim, como funciona as propriedades de um componente (elementos que podemos alterar
-    em outro componente, como o texto por exemplo)
-
-/* Aqui aprendemos sobre componentes do react e como rodar codigo HTML nele com Typescript e JSx
-Aqui entendemos também como exportar funções para o App main e como utilizar o State management, 
-além de aprender sobre UI e sobre a configuração e usabilidade do Tailwind css. */
-
 export function Widget() {
 
 
