@@ -31,11 +31,13 @@ export class SubmitFeedbackUseCase{
         await this.feedbackRepository.create({type, comment, screenshot});
         
         await this.mailAdapter.sendMail({
-            subject : "Oitenta e oito !!!!",
-            body : `
-            <div> Tópico: ${type} </div>
-            <div> Comentário:  ${comment} </div>
-            <div> Screenshot: ${screenshot} </div>`
+            subject : "Feedback de usuário",
+            body : [`
+            <div>
+            <div> Tópico: ${type} </div>`,
+            `<div> Comentário:  ${comment} </div>`,
+           screenshot ? `<img src="${screenshot}"/>` : null, 
+            `</div>` ].join('\n')
         });
         }
     

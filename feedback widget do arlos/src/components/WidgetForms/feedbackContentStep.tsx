@@ -1,7 +1,9 @@
 import { ArrowLeft, Camera } from "phosphor-react";
 import { FormEvent, useState } from "react";
 import { feedbackType, feedbackTypes } from ".";
+import { api } from "../../lib/api";
 import { CloseButton } from "../CloseButton";
+import { Loading } from "../Loading";
 import { ScreenShotButton } from "./ScreenShotButton";
 
 interface FeedbackContentStepProps {	
@@ -17,13 +19,17 @@ export function FeedbackContentStep({onFeedbackSent, feedbackType, onFeedbackRes
     const feedbackTypeInfo = feedbackTypes[feedbackType];
     const [screenshot, setScreenshot] = useState<string | null>(null);
     const [comment, setComment] = useState<string>('');
+    const [isLoading, setIsLoading] = useState(false);
 
-    function handleSubmitFeedback(event : FormEvent){
+   async function handleSubmitFeedback(event : FormEvent){
         event.preventDefault();
-        console.log({
+        setIsLoading(true);
+        await api.post('/feedbacks', {
+            type : feedbackType,
             comment, 
             screenshot,
         })
+        setIsLoading(false);
         onFeedbackSent();
     }
 
@@ -44,7 +50,7 @@ export function FeedbackContentStep({onFeedbackSent, feedbackType, onFeedbackRes
         <ScreenShotButton
         screenshot={screenshot}
         onScreenshotTook={setScreenshot}></ScreenShotButton>
-        <button disabled={comment.length === 0} type="submit" onClick={handleSubmitFeedback} className="p-2 bg-brand-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm hover:bg-brand-300 focus:outline-none focus:ring-2 focus-ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 disabled:opacity-40 disabled:hover:bg-brand-500 transition-opacity">Enviar Feedback</button>    
+        <button disabled={comment.length === 0 || isLoading } type="submit" onClick={handleSubmitFeedback} className="p-2 bg-brand-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm hover:bg-brand-300 focus:outline-none focus:ring-2 focus-ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 disabled:opacity-40 disabled:hover:bg-brand-500 transition-opacity">{isLoading ? <Loading/> : "Enviar Feedback"}</button>    
     </footer>
     </form>
     
