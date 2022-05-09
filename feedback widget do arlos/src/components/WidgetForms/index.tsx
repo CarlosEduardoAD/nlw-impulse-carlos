@@ -58,9 +58,6 @@ export function WidgetForm(){
             {!feedbackType ? (<FeedbackTypeStep onFeedbackTypeChanged={setFeedbackType}></FeedbackTypeStep>)
             : (<FeedbackContentStep feedbackType={feedbackType} onFeedbackRestartRequested={handleRestartFeedback} onFeedbackSent={() => setFeedbackSent(true)}></FeedbackContentStep>)}
             </>)}
-
-            <Button/>
-
             <footer>
                 <div className="text-zinc-900 dark:text-white transition duration-1000;">Feito de maneira com ajuda da <a className="underline underline-offset-1" href="https://www.rocketseat.com.br/">Rocketseat</a> por <a className="underline underline-offset-1" href="https://github.com/Karl-developer">Carlos Eduardo</a></div>
             </footer>

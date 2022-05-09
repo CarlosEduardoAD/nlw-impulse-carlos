@@ -7,12 +7,11 @@ export function Button() {
 
     const [colorTheme, setTheme] = UseDarkMode();
 
-
     return (
         <div>
-            <span onClick={() => setTheme(colorTheme)}>
-                {colorTheme === "dark" ? (<button><img src={lua}  width="25" alt="Lua" height="25" /></button>
-                ) : (<button><img src={sol} width="25" alt="Sol" height="25" /></button>)}
+            <span className="transition duration-200" onClick={() => setTheme(colorTheme)}>
+                {colorTheme === "dark" ? (<button><img src={lua}  width="45" alt="Lua" height="45" /></button>
+                ) : (<button><img src={sol} width="45" alt="Sol" height="45" /></button>)}
             </span>
         </div>
     )
