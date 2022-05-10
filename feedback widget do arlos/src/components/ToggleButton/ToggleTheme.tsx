@@ -1,6 +1,6 @@
 import UseDarkMode from "./UseDarkMode";
-import lua from "../../assets/lua.svg";
-import sol from "../../assets/sol.svg";
+import {Sun} from "phosphor-react"
+import {Moon} from "phosphor-react"
 
 
 export function Button() {
@@ -9,10 +9,12 @@ export function Button() {
 
     return (
         <div>
+            <button>
             <span className="transition duration-200" onClick={() => setTheme(colorTheme)}>
-                {colorTheme === "dark" ? (<button><img src={lua}  width="45" alt="Lua" height="45" /></button>
-                ) : (<button><img src={sol} width="45" alt="Sol" height="45" /></button>)}
+                {colorTheme === "dark" ? (<Moon className="w-6 h-6" size={25}></Moon>
+                ) : (<Sun className="w-6 h-6" size={25}></Sun>)}
             </span>
+            </button>
         </div>
     )
 }
