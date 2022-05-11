@@ -1,4 +1,5 @@
 import { Sidebar } from "./components/HeaderElements/MobileMenu";
+import { MainProse } from "./components/TextnImages/paragraph";
 import { MainTitle } from "./components/TextnImages/Title";
 import { PopoverDarkMode } from "./components/ToggleButton/PopoverDarkMode";
 import { Button } from "./components/ToggleButton/ToggleTheme";
@@ -21,6 +22,9 @@ export function App(){
         </div>
         <div>
         <MainTitle></MainTitle>
+      </div>
+      <div>
+        <MainProse></MainProse>
       </div>
         <div className="flex justify-center font-mono pt-10">
           <PopoverDarkMode></PopoverDarkMode>
