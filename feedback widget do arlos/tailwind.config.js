@@ -12,7 +12,10 @@ module.exports = {
       },
     borderRadius : {
         md : '4px'
-    } 
+    },
+    fontFamily : {
+      'Heebo' : ['Heebo', 'sans-serif'],
+    }
     },
   },
   plugins: [

@@ -3,6 +3,23 @@ import { useState } from "react";
 import { Button } from "../ToggleButton/ToggleTheme";
 import { Popover } from "@headlessui/react";
 
+
+const pages = {
+  1 : {
+    title: "Home",
+    img : "blablabla"
+  },
+  2 : {
+    title: "About",
+    img : "blablabla"},
+  3 : {
+    title: "Contact",
+    img : "blablabla"},
+  4 : {
+    title: "Blog",
+    img : "blablabla"},
+}
+
 export function Sidebar() {
   const [isOpen, setOpen] = useState<boolean | null>(false);
 

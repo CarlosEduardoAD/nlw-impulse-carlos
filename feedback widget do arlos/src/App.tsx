@@ -1,4 +1,5 @@
 import { Sidebar } from "./components/HeaderElements/MobileMenu";
+import { MainTitle } from "./components/TextnImages/Title";
 import { PopoverDarkMode } from "./components/ToggleButton/PopoverDarkMode";
 import { Button } from "./components/ToggleButton/ToggleTheme";
 import UseDarkMode  from "./components/ToggleButton/UseDarkMode";
@@ -14,9 +15,13 @@ export function App(){
   return (
     <div className="min-h-screen dark:bg-[#2a2a4a] text-zinc-100 transition duration-1000;">
     <div>
+      
     <div className="flex mr-[55px] mb-8 justify-end items-center">
       <Sidebar/>
         </div>
+        <div>
+        <MainTitle></MainTitle>
+      </div>
         <div className="flex justify-center font-mono pt-10">
           <PopoverDarkMode></PopoverDarkMode>
       </div>
