@@ -26,7 +26,7 @@ export function Sidebar() {
   return (
     <>
       {!isOpen ? (
-        <div className={`top-0 right-0 fixed bg-amber-400 dark:bg-black w-[8vw] h-full p-10 opacity-70 dark:opacity-40 ease-in-out duration-500 ${
+        <div className={`top-0 right-0 fixed bg-amber-400 dark:bg-black xl:w-32 lg:w-24 md:w-12 sm:w-6 xs:w-4 h-full p-10 opacity-70 dark:opacity-40 ease-in-out duration-500 ${
           !isOpen ? "translate-x-0" : "translate-x-full"
         }`}>
           <button
@@ -42,7 +42,7 @@ export function Sidebar() {
         </div>
       ) : (
         <div
-          className={`top-0 right-0 fixed bg-amber-400 dark:bg-black w-[20vw] opacity-80  dark:opacity-60 h-full p-10 ease-in-out duration-500 {isOpen ? "translate-x-0" : "translate-x-full"}`}
+          className={`top-0 right-0 fixed bg-amber-400 dark:bg-black w-[28vw] lg:w-[26vw] md:w-[24w] sm:w-[22vw] xs:w-[20vw] opacity-80  dark:opacity-60 h-full p-10 ease-in-out duration-500 {isOpen ? "translate-x-1" : "translate-x-full"}`}
         >
           <button onClick={() => setOpen(!isOpen)}>
             <ArrowSquareRight size={24}></ArrowSquareRight>{" "}
