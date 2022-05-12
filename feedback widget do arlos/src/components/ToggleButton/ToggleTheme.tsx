@@ -13,9 +13,9 @@ export function Button() {
           onClick={() => setTheme(colorTheme)}
         >
           {colorTheme === "dark" ? (
-            <Moon className="w-6 h-6" size={25}></Moon>
+            <Moon className="mt-1" size={25}></Moon>
           ) : (
-            <Sun className="w-6 h-6" size={25}></Sun>
+            <Sun className="mt-1" size={25}></Sun>
           )}
         </span>
       </button>

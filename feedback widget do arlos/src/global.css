@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body{
-    @apply h-32 scrollbar-thin scrollbar-thumb-black scrollbar-track-indigo-700 overflow-y-scroll;
+    @apply h-32 scrollbar-thin scrollbar-thumb-black scrollbar-track-indigo-700 overflow-y-scroll p-0 m-0;
 }
