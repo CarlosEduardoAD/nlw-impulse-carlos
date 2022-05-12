@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    @apply h-32 scrollbar-thin scrollbar-thumb-black scrollbar-track-indigo-700 overflow-y-scroll;
+}
