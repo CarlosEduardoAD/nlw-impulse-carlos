@@ -1,9 +1,6 @@
 import { ArrowSquareLeft, ArrowSquareRight } from "phosphor-react";
 import { useState } from "react";
-import { Button } from "../ToggleButton/ToggleTheme";
-import { Popover } from "@headlessui/react";
 import { Link } from "react-router-dom";
-
 
 const pages = {
   1 : {
@@ -48,9 +45,10 @@ export function Sidebar() {
           <button onClick={() => setOpen(!isOpen)}>
             <ArrowSquareRight size={24}></ArrowSquareRight>{" "}
           </button>
-          <div>
+      <div className="flex flex-col items-center justify-center gap-8 mt-48 text-black dark:text-white from-opacity-20 to-opacity-80 transition duration-300">
+      <Link to='/'>Home</Link>
+      <Link to='/historia '>História</Link>
         <Link to='/contato'>Contato</Link>
-        <Link to='/home'>Home</Link>
       </div>
         </div>
       )}

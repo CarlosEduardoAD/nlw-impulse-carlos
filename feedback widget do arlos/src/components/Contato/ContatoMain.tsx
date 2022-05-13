@@ -1,10 +1,7 @@
 export function MainContato(){
     return(
         <div>
-            Nossos contatos são estes:
-            numero: blablabla
-            akdsfa : asdfadsf
-            fasdfa :qwioreq
+            <h1>funciona praga</h1>
         </div>
     )
 }

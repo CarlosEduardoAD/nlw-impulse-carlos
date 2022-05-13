@@ -11,5 +11,5 @@ export default function UseDarkMode(){
     localStorage.setItem('theme', theme)
     root.classList.add(theme), [theme]}
     )
-    return [colorTheme, setTheme]
+    return [colorTheme, setTheme] as const;
 } 
