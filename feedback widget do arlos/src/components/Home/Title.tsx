@@ -3,9 +3,9 @@ import UseDarkMode from "../ToggleButton/UseDarkMode";
 export function MainTitle() {
   return (
     <div>
-      <div className="text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-2xl xs:text-lg font-Heebo mt-52 ml-40 xl:ml-30 lg:ml-24 md:ml-16 sm:ml-12 xs:ml-2">
+      <div className="font-extrabold text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-2xl xs:text-lg font-Heebo mt-52 ml-40 xl:ml-30 lg:ml-24 md:ml-16 sm:ml-12 xs:ml-2">
         <h1>
-          <span className="bg-black dark:bg-white text-transparent bg-clip-text">Independente de se é</span> <span className="bg-gradient-to-t text-transparent bg-clip-text from-blue-500 to-indigo-700 opacity-20 dark:opacity-100">noite</span> <span className="bg-black dark:bg-white text-transparent bg-clip-text">ou</span> <span className="transition-opacity bg-gradient-to-t text-transparent bg-clip-text from-blue-500 to-emerald-700 opacity-100 dark:opacity-20 dark:bg-gray-200 "> dia</span> <br />
+          <span className="bg-black dark:bg-white text-transparent bg-clip-text">Independente de se é</span> <span className="bg-gradient-to-t text-transparent bg-clip-text from-blue-500 to-indigo-900 opacity-20 dark:opacity-100">noite</span> <span className="bg-black dark:bg-white text-transparent bg-clip-text">ou</span> <span className="transition-opacity bg-gradient-to-t text-transparent bg-clip-text from-blue-500 to-emerald-700 opacity-100 dark:opacity-20 dark:bg-gray-200 "> dia</span> <br />
           <span className="bg-black dark:bg-white text-transparent bg-clip-text">O céu nos reserva muitas belezas</span>
         </h1>
       </div>

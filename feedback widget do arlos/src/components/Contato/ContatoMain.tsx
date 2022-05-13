@@ -1,3 +1,4 @@
+import { Popover } from '@headlessui/react'
 import '../../global.css'
 import { Sidebar } from '../HeaderElements/MobileMenu'
 import { PopoverDarkMode } from '../ToggleButton/PopoverDarkMode'
@@ -7,12 +8,10 @@ export function MainContato(){
     return(
         <div className="min-h-screen dark:bg-[#2a2a4a] text-zinc-100 transition duration-1000;">
     <div>
-      
     <div className="flex mr-[55px] mb-8 justify-end items-center">
       <Sidebar/>
         </div>
         <div>
-        
       </div>
       <div>
         
