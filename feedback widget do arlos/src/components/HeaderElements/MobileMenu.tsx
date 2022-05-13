@@ -2,6 +2,7 @@ import { ArrowSquareLeft, ArrowSquareRight } from "phosphor-react";
 import { useState } from "react";
 import { Button } from "../ToggleButton/ToggleTheme";
 import { Popover } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 
 const pages = {
@@ -47,6 +48,10 @@ export function Sidebar() {
           <button onClick={() => setOpen(!isOpen)}>
             <ArrowSquareRight size={24}></ArrowSquareRight>{" "}
           </button>
+          <div>
+        <Link to='/contato'>Contato</Link>
+        <Link to='/home'>Home</Link>
+      </div>
         </div>
       )}
     </>

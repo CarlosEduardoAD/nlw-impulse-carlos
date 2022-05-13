@@ -1,6 +1,6 @@
 import { Sidebar } from "./components/HeaderElements/MobileMenu";
-import { MainProse } from "./components/TextnImages/paragraph";
-import { MainTitle } from "./components/TextnImages/Title";
+import { MainProse } from "./components/Home/paragraph";
+import { MainTitle } from "./components/Home/Title";
 import { PopoverDarkMode } from "./components/ToggleButton/PopoverDarkMode";
 import { Button } from "./components/ToggleButton/ToggleTheme";
 import UseDarkMode  from "./components/ToggleButton/UseDarkMode";
