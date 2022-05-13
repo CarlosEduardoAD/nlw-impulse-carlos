@@ -45,6 +45,9 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
     require('tailwind-scrollbar'),
+    require("tailwindcss-animatecss")({
+      classes: ['animate__animated', 'animate__fadeInRight',],
+    })
     // ...
   ],
   variants: {
