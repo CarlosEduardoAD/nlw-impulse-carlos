@@ -1,6 +1,6 @@
 export function CardContato (){
     return(
-        <div className="bg-amber-500 dark:bg-black text-black dark:text-white mr-[420px] mt-[100px] rounded-lg p-10">
+        <div className="transition bg-amber-500 dark:bg-brand-500 text-black dark:text-white mr-[420px] mt-[100px] rounded-lg p-10 font-Heebo font-normal">
             <p>Não somos uma startup ou algo do tipo, somos apenas um timezinho <br />
             de pequenos desenvolvedores que querem trazer programas mais de boas<br />
             para a comunidade de tecnologia, não que seja aplicações grandes sejam ruins, mas  <br />
@@ -10,7 +10,7 @@ export function CardContato (){
 
             <p>
             Utilizamos tecnologias open-source de grande parte, tipo <br />
-            PostegreSql, Svelte e FastApi (Python) para fazer aplicações <br />
+            <strong>PostegreSql</strong>, <strong>Svelte</strong> e <strong>FastApi</strong> (Python) para fazer aplicações <br />
             poderosas e ao mesmo tempo, bonitas de se ver. <br />
             </p>
 
