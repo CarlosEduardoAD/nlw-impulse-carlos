@@ -3,6 +3,7 @@ import '../../global.css'
 import { Sidebar } from '../HeaderElements/MobileMenu'
 import { PopoverDarkMode } from '../ToggleButton/PopoverDarkMode'
 import { Widget } from '../Widget'
+import { CardContato } from './Card'
 
 export function MainContato(){
     return(
@@ -11,10 +12,11 @@ export function MainContato(){
     <div className="flex mr-[55px] mb-8 justify-end items-center">
       <Sidebar/>
         </div>
-        <div>
+        <div className='flex justify-center items-center'>
+      <CardContato></CardContato>
       </div>
       <div>
-        
+        O popover vai ficar aqui eu acho
       </div>
         <div className="flex justify-center font-mono pt-10">
           <PopoverDarkMode></PopoverDarkMode>
