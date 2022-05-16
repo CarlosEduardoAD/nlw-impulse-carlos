@@ -15,9 +15,6 @@ export function MainContato(){
         <div className='flex justify-center items-center'>
       <CardContato></CardContato>
       </div>
-      <div className='absolute left-[780px] -mt-8'>
-      <PopContato></PopContato>
-      </div>
         <div className="flex justify-center font-mono pt-10">
           <PopoverDarkMode></PopoverDarkMode>
       </div>
