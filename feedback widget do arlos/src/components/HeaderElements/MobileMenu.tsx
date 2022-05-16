@@ -36,9 +36,9 @@ export function Sidebar() {
             <ArrowSquareRight size={24}></ArrowSquareRight>{" "}
           </button>
           <div className="font-bold flex flex-col items-center justify-center gap-y-24 xl:gap-y-20 lg:gap-y-16 md:gap-y-12 sm:gap-y-8 bxs:gap-y-6 xs:gap-y-4 mt-24 xl:mt-28 lg:mt-32 md:mt-36 sm:mt-40 bxs:mt-44 xs:mt-48 mt-24 text-black dark:text-white transition duration-300 font-Heebo animate__animated  animate__fadeInRight">
-      <Link className="transition duration-700 opacity-100 focus:bg-blue-500 dark:focus:bg-brand-500 hover:bg-white dark:hover:bg-brand-300 rounded-lg p-4" to='/'>Home</Link>
-      <Link className="transition duration-700 opacity-100 focus:bg-blue-500 dark:focus:bg-brand-500 hover:bg-white dark:hover:bg-brand-300 rounded-lg p-4" to='/historia '>História</Link>
-        <Link className="transition duration-700 opacity-100 focus:bg-blue-500 dark:focus:bg-brand-500 hover:bg-white dark:hover:bg-brand-300 rounded-lg p-4" to='/contato'>Contato</Link>
+      <Link className="transition duration-700 opacity-100 focus:bg-blue-500 dark:focus:bg-brand-500 hover:bg-white dark:hover:bg-brand-300 rounded-lg p-3" to='/'>Home</Link>
+      <Link className="transition duration-700 opacity-100 focus:bg-blue-500 dark:focus:bg-brand-500 hover:bg-white dark:hover:bg-brand-300 rounded-lg p-3" to='/historia '>História</Link>
+        <Link className="transition duration-700 opacity-100 focus:bg-blue-500 dark:focus:bg-brand-500 hover:bg-white dark:hover:bg-brand-300 rounded-lg p-3" to='/contato'>Contato</Link>
       </div>
         </div>
       )}

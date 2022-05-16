@@ -11,7 +11,7 @@ export function MainHistoria(){
       <Sidebar/>
         </div>
         <div>
-        
+        blablablablabla
       </div>
       <div>
         
