@@ -11,7 +11,7 @@ export function MainTitle() {
       </div>
       <div className="font-Heebo ml-[233px] lg:ml-[183px] md:ml-[73px] sm:ml-[33px] xs:ml-[13px] lg:text-lg md:text-md sm:text-sm xs:text-xs text-black dark:text-white">
         <p>
-          Vamos te mostrar maravilhas que <br/> nenhum ser humano jamais já pensou ver
+          Vamos te mostrar maravilhas que nenhum ser humano jamais já pensou ver
         </p>
       </div>
     </div>
