@@ -1,6 +1,6 @@
 export function CardContato (){
     return(
-        <div className="transition bg-amber-500 dark:bg-brand-500 text-black dark:text-white mr-[420px] mt-[100px] rounded-lg p-10 font-Heebo font-normal">
+        <div className="transition bg-amber-500 dark:bg-brand-500 text-black dark:text-white mr-[480px] xl:mr-[420px] lg:mr-[280px] md:mr-[170px] md:ml-[170-px] sm:mr-[80px] bxs:ml-[40px] bxs:mr-[150px] xs:mr-[120px] xs:ml-[50px] xxs:mr-[120px] mt-[100px] rounded-lg p-10 xl:p-8 lg:p-6 md:p-4 sm:p-3 bxs:p-2 font-Heebo font-normal xl:text-xl lg:text-lg md: md:text-md sm:text-sm xbs:text-xs">
             <p>Não somos uma startup ou algo do tipo, somos apenas um timezinho <br />
             de pequenos desenvolvedores que querem trazer programas mais de boas<br />
             para a comunidade de tecnologia, não que seja aplicações grandes sejam ruins, mas  <br />
