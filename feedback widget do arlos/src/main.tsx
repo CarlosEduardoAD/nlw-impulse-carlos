@@ -12,8 +12,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<App/>} />
-      <Route path="contato" element={<MainContato/>} />
-      <Route path="historia" element={<MainHistoria/>} />
+      <Route path="historia" element={<MainContato/>} />
+      <Route path="contato" element={<MainHistoria/>} />
     </Routes>
   </BrowserRouter>
   </React.StrictMode>

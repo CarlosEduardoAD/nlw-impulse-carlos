@@ -10,8 +10,10 @@ export function MainHistoria(){
     <div className="flex mr-[55px] mb-8 justify-end items-center">
       <Sidebar/>
         </div>
-        <div>
-        blablablablabla
+        <div className="text-black dark:text-white flex items-center justify-center mr-[200px] mt-[200px] font-Heebo font-semibold text-4xl xl:text-5xl xl:mr-[300px] lg:text-3xl lg:mr-[140px] ">
+        Presidente Inprudente <br/>
+        Bairro Lago Esmeralda rua Dois de Julho nº. 100 <br />
+        (11) 91234-5678
       </div>
       <div>
         
